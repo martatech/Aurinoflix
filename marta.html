@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marta.css">
+    <title>Minha Lista de Filmes</title>
+  
+</head>
+<body>
+
+<div id="overlay"></div>
+
+<div id="addMovieModal">
+    <h1>AURINOFLIX</h1>
+    <h2>Adicionar Filme</h2>
+    <form id="addMovieForm">
+        <label for="movieTitle">Nome do Filme:</label>
+        <input type="text" id="movieTitle" required>
+        <label for="movieCover">Link da Capa:</label>
+        <input type="url" id="movieCover" required>
+        <label for="movieLink">Link do Filme:</label>
+        <input type="url" id="movieLink" required>
+        <button type="button" onclick="addMovie()"><b>Adicionar</b></button>
+        <button type="button" onclick="closeModal()"><b>Cancelar</b></button>
+    </form>
+</div>
+
+<button onclick="openModal()"><b>ADICIONAR FILME</b></button>
+
+<script src="marta.js"></script>
+</body>
+</html>
